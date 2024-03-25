@@ -19,7 +19,8 @@ mkdir -p $HOME/.config && cd $HOME/.config
 git clone https://github.com/johanesPao/nix.git
 nix run nixpkgs#home-manager -- switch --flake nix/#linux_x86_64
 ```
-> ![WARNING]
+
+> [!WARNING]
 > `#linux_x86_64` adalah varian profile, namun saat ini belum ada profile lain yang dikembangkan selain varian ini.
 
 Untuk melakukan pembaruan konfigurasi dan reload `home-manager`:
