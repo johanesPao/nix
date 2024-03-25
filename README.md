@@ -1,7 +1,4 @@
-# nix
-Repository untuk nix home-manager personal
-=======
-# Personal Home Manager jPao
+# Personal Home Manager jPao (Nix)
 Repositori ini berisikan personal environment setup menggunakan `home-manager` untuk **jPao** yang dapat berjalan pada:
 - [x] linux x86_64
 - [ ] ~~darwin~~ (*probably will never work on this one hehe*)
