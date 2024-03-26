@@ -18,7 +18,7 @@ in
       fh # Flakehub CLI
       btop # System monitoring
       glxinfo # OpenGL tools
-      (nerdfonts.override { fonts = [ "FiraCode" ] }) # Font ligature
+      (nerdfonts.override { fonts = [ "FiraCode" ]; }) # Font ligature
       (glwrapper.nixGLMesaWrap alacritty) # Terminal emulator
       # Hiburan
       spotify

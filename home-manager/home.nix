@@ -26,7 +26,7 @@
   imports = [
     ./aplikasi/package.nix
   ];
-i
+
   # # File association dan default app
   xdg.mimeApps = {
     enable = true;
@@ -96,7 +96,7 @@ i
       enable = true;
       shellAliases = {
         isi = "ls -al";
-        hms = "home-manager switch --flake ${specialArgs.direktori_dotfiles}/nix#linux_x86_64";
+        hms = "home-manager switch --flake ~/.config/nix#${config.home.username}";
       };
       # # Perubahan pada variabel session di bawah ini memerlukan relogin
       sessionVariables = {

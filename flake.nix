@@ -21,7 +21,7 @@
       direktori_dotfiles = "/.config";
       # pkgs = nixpkgs.legacyPackages.${system};
     in {
-      homeConfigurations.linux_x86_64 = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations."jpao" = home-manager.lib.homeManagerConfiguration {
         # inherit pkgs;
         pkgs = import nixpkgs {
           system = "x86_64-linux";
