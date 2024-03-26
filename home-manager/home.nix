@@ -96,7 +96,7 @@ i
       enable = true;
       shellAliases = {
         isi = "ls -al";
-        hms = "home-manager switch --flake ~/.config/nix";
+        hms = "home-manager switch --flake ${specialArgs.direktori_dotfiles}/nix#linux_x86_64";
       };
       # # Perubahan pada variabel session di bawah ini memerlukan relogin
       sessionVariables = {
