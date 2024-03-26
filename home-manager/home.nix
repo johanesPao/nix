@@ -23,26 +23,10 @@
 
   # # Package - package mendasar yang lebih universal dan tidak terlalu terkait
   # # dengan penggunaan bahasa pemrograman seperti curl, wget, git, gh, fh
-  home.packages = with pkgs; [
-    # # Package system-wide
-    curl
-    wget
-    git
-    gh # GitHub CLI
-    fh # FlakesHub CLI
-    btop
-    evince # PDF Viewer
-    glxinfo # Utilitas untuk OpenGL
-    # override packages nerdfonts untuk menginstall hanya FiraCode
-    (nerdfonts.override { fonts = [ "FiraCode" ]; })
-
-    # hiburan
-    spotify
-
-    # reader
-    evince
+  imports = [
+    ./aplikasi/package.nix
   ];
-
+i
   # # File association dan default app
   xdg.mimeApps = {
     enable = true;
@@ -96,11 +80,6 @@
   home.sessionVariables = {
   #  EDITOR = "vim";
   };
-
-
-  imports = [
-    ./aplikasi/alacritty/alacritty.nix
-  ];
 
   # # Enable home-manager dan program - program yang membutuhkan deklarasi konfigurasi
   programs = {
